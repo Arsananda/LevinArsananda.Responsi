@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buat Janji - MindWell Clinic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MindWell Clinic</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="jadwal.html">Jadwal</a></li>
+                <li><a href="buat-janji.html">Buat Janji</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="booking">
+            <h2>Buat Janji Konsultasi</h2>
+            <form action="booking.php" method="POST">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Tanggal:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Waktu:</label>
+                <select id="time" name="time" required>
+                    <option value="">Pilih waktu</option>
+                    <option value="09:00">09:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+
+                <button type="submit">Buat Janji</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;  MindWell Clinic. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
